@@ -144,7 +144,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Docs\This is just a test.rtf" />
+    <None Include="Docs\About.rtf" />
     <None Include="My Project\app.manifest">
       <SubType>Designer</SubType>
     </None>
@@ -196,6 +196,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Docs\ReadMe.txt" />
+    <None Include="Images\angel.png" />
+    <None Include="Images\btn_donate_LG.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

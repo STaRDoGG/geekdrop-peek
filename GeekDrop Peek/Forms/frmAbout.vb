@@ -20,7 +20,7 @@
 
         Try
             ' Save the RTF file from our Resources to the Temp foler
-            IO.File.WriteAllText(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & strAppname & ".rtf", My.Resources.Test)
+            IO.File.WriteAllText(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & strAppname & ".rtf", My.Resources.AboutRTF)
 
             ' Load that saved RTF file into the RichTextBox
             rtbDescription.LoadFile(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & strAppname & ".rtf")
@@ -43,6 +43,10 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Close_Window(Me)
+    End Sub
+
+    Private Sub picDonate_Click(sender As Object, e As EventArgs) Handles picDonate.Click
+        DonateWithPaypal("YACE4N9AK6B5E")
     End Sub
 
 End Class

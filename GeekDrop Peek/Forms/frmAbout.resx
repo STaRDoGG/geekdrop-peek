@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblGodWare.Text" xml:space="preserve">
+    <value>GeekDrop Peek is "God Ware".
+
+What is God Ware?
+
+It means GOD WANTS you to donate if you find this app useful.
+
+You can donate any amount that you feel it's worth to you, God is the only one who will judge whether you donated enough; and of course, if you're not a believer in God, you can just consider this regular donation-ware. :)</value>
+  </data>
 </root>
