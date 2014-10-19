@@ -96,11 +96,11 @@ Partial Class frmAbout
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.DarkGray
         Me.lblTitle.Location = New System.Drawing.Point(50, 9)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(117, 21)
+        Me.lblTitle.Size = New System.Drawing.Size(136, 25)
         Me.lblTitle.TabIndex = 22
         Me.lblTitle.Text = "GeekDrop Peek"
         '

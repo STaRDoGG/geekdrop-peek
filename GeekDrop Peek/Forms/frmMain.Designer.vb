@@ -36,9 +36,11 @@ Partial Class frmMain
         Me.lblState = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.picLogo = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.StatusStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StatusStrip1
@@ -51,23 +53,23 @@ Partial Class frmMain
         Me.StatusStrip1.Size = New System.Drawing.Size(432, 22)
         Me.StatusStrip1.SizingGrip = False
         Me.StatusStrip1.TabIndex = 3
-        Me.StatusStrip1.Text = "StatusStrip1"
         '
         'tsLabel
         '
         Me.tsLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
         Me.tsLabel.ForeColor = System.Drawing.Color.White
         Me.tsLabel.Name = "tsLabel"
-        Me.tsLabel.Size = New System.Drawing.Size(0, 17)
+        Me.tsLabel.Size = New System.Drawing.Size(44, 17)
+        Me.tsLabel.Text = "Version"
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.DarkGray
         Me.lblTitle.Location = New System.Drawing.Point(50, 9)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(117, 21)
+        Me.lblTitle.Size = New System.Drawing.Size(150, 30)
         Me.lblTitle.TabIndex = 11
         Me.lblTitle.Text = "GeekDrop Peek"
         '
@@ -178,12 +180,24 @@ Partial Class frmMain
         Me.picLogo.TabIndex = 14
         Me.picLogo.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox1.Image = Global.GeekDrop_Peek.My.Resources.Resources.GeekDrop_Peek
+        Me.PictureBox1.Location = New System.Drawing.Point(362, 9)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 22
+        Me.PictureBox1.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(432, 221)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblState2)
         Me.Controls.Add(Me.lblState)
         Me.Controls.Add(Me.btnExit)
@@ -206,6 +220,7 @@ Partial Class frmMain
         Me.StatusStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -222,5 +237,6 @@ Partial Class frmMain
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents lblState2 As System.Windows.Forms.Label
     Friend WithEvents lblState As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class

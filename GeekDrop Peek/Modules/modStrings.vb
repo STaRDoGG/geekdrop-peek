@@ -176,7 +176,7 @@ Module modStrings
             Dim oCurrent As New Version(strCurrentVer)
 
             ' Get the latest Strings version from the website
-            Dim strLatest As String = Scrape_Version()
+            Dim strLatest As String = Scrape_Latest_Version()
 
             ' Store the scraped, latest Strings.exe version as a Version object for later comparison
             ' NOTE: if running the this app for the first time and it's Scrape_Version() check gets blocked by a firewall, the following line coughs up an exception.
@@ -205,7 +205,7 @@ Module modStrings
 
     End Sub
 
-    Private Function Scrape_Version() As String
+    Private Function Scrape_Latest_Version() As String
         ' Fetches the Strings web page, then scrapes it for the latest version, then returns the scraped version as the result
         '
         ' Note: I'm not much of a fan of scraping pages, since it's so easily susceptible to breaking with even the slightes change by the website owner, but
@@ -216,7 +216,7 @@ Module modStrings
         '
         ' <h1>Strings v2.52</h1>
 
-        Scrape_Version = String.Empty
+        Scrape_Latest_Version = String.Empty
 
         Try
             Dim strRequest As WebRequest = WebRequest.Create(strStringsSite)
@@ -230,13 +230,13 @@ Module modStrings
             strParse = strParse.Substring(strParse.IndexOf("<h1>Strings v") + 13)
 
             ' Save it
-            Scrape_Version = strParse
+            Scrape_Latest_Version = strParse
 
         Catch ex As Exception
             Debug.Print(ex.Message)
         End Try
 
-        Return Scrape_Version
+        Return Scrape_Latest_Version
 
     End Function
 

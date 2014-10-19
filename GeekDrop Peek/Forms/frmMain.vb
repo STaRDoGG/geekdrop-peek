@@ -23,7 +23,7 @@ Public Class frmMain
                 ' Change button to "Uninstall"
                 With btnInstall_Uninstall
                     .Image = My.Resources.arrow_red
-                    .Text = "Uninstall " & strAppname
+                    .Text = "UNINSTALL " & strAppname.ToUpper
                 End With
 
             Else
@@ -32,7 +32,7 @@ Public Class frmMain
                 ' Set the button to show the option to install it
                 With btnInstall_Uninstall
                     .Image = My.Resources.arrow
-                    .Text = "Install Shell Extension"
+                    .Text = "INSTALL SHELL EXTENSION"
                 End With
 
                 ' Alert the user that the shell extension needs to be installed, which afterall, IS what the program is all about.
@@ -70,7 +70,7 @@ Public Class frmMain
 
     Private Sub btnInstall_Uninstall_Click(sender As Object, e As EventArgs) Handles btnInstall_Uninstall.Click
 
-        If btnInstall_Uninstall.Text.Contains("Uninstall") Then
+        If btnInstall_Uninstall.Text.Contains("UNINSTALL") Then
             ' Uninstall
 
             Try
@@ -184,7 +184,7 @@ Public Class frmMain
             ' Set all indicators to Installed
             With btnInstall_Uninstall
                 .Image = My.Resources.arrow_red
-                .Text = "Uninstall Shell Extension"
+                .Text = "UNINSTALL SHELL EXTENSION"
             End With
 
             lblState2.Text = "Installed"
@@ -192,7 +192,7 @@ Public Class frmMain
             ' Set all indicators to Not Installed
             With btnInstall_Uninstall
                 .Image = My.Resources.arrow
-                .Text = "Install Shell Extension"
+                .Text = "INSTALL SHELL EXTENSION"
             End With
 
             lblState2.Text = "Not Installed"

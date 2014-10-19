@@ -67,6 +67,9 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GeekDrop Peek.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -189,11 +192,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Docs\ReadMe.txt" />
-    <Content Include="Images\Screenshots\about.jpg" />
-    <Content Include="Images\Screenshots\main.jpg" />
+    <Content Include="GeekDrop Peek.ico" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-About.jpg" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Context-Menu.png" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Example-Output.png" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Install.jpg" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Installation-Step1.jpg" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Installation-Step2.jpg" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Installation-Step3.jpg" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Uninstall.jpg" />
+    <Content Include="Images\Screenshots\GeekDrop-Peek-Uninstallation.jpg" />
     <None Include="Images\angel.png" />
     <None Include="Images\btn_donate_LG.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
