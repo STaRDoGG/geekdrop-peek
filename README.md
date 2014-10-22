@@ -1,4 +1,4 @@
-# GeekDrop Peek #
+# ![YooHoo ...](https://github.com/STaRDoGG/geekdrop-peek/blob/master/GeekDrop%20Peek/Images/GeekDrop%20Peek.png) GeekDrop Peek #
 
 **Extract &amp; View Strings in Files via Windows' Context-Menu.**
 
