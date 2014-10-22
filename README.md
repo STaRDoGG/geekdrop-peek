@@ -7,9 +7,11 @@
 There's a 32 Bit version and a 64 Bit version for you to choose from.
 
 
+
 ## Like GeekDrop Peek and wanna donate? ##
 
 Why, thank ya kindly! You can do just that via Paypal! http://geekdrop.com/x/peek-donations
+
 
 
 ## What in bejesus this? ##
@@ -25,13 +27,14 @@ Alas, that is UNacceptable to us die-hard Peek lovers ;) and this is my attempt 
 Actually, rather than writing one from scratch myself, I've decided to just made use of what's already out there and sort of "stitch" things together into basically a Peek clone. No sense in re-inventing the wheel, right? So, the only credit I can accept is my work in bridging things together (this app), which apparently no one else has to date. Certainly, a slightly more elegant way could (and should) be done, i.e. write an actual shell extension again, but the end visual and usability result in mine is still the same. Once you install this it'll behave exactly the same as if it were a true, compiled shell extension, i.e. the original Peek Shell Extension we all knew and loved.
 
 
+
 ## Installation? (we dun need no steenking installation!) ##
 
 This is a VERY easy app to use, and is designed to be 100% portable so that you can just move a single file wherever you want it; any folder, no setup program needed, it can be copied to a USB stick, whatever ya want (there are a couple requirements however, see below). To use it just follow the steps below.
 
 **Requirements:**
 * .NET Framework 4.5 (usually already installed in Windows if updated)
-* Sysinternals "Strings" (More info below)(Homepage: http://technet.microsoft.com/en-us/sysinternals/bb897439.aspx)
+* Sysinternals "Strings" (More info below) (homepage: http://technet.microsoft.com/en-us/sysinternals/bb897439.aspx)
 
 The "engine" behind this all relies on Sysinternal's "Strings" program. It's what does the actual string extraction for us. Maybe later I'll take the time to write my own, but for now there seems to be no reason to since theirs is excellent. Btw, all full credit, etc. for that is theirs, not trying to step on any usage rights.
 
@@ -39,18 +42,20 @@ However, their license doesn't allow us to actually include it in this package, 
 
 **1.)** Simply place GeekDrop Peek.exe anywhere on your computer or external USB drive that you want to keep it, then double-click it.
 
-**a)** The first time it's run, it'll first check if you have Strings.exe in the same folder as this app (meaning it's "installed" for lack of a better term), if not, it'll download it and unzip it to the same folder for you.
+ **a)** The first time it's run, it'll first check if you have Strings.exe in the same folder as this app (meaning it's "installed" for lack of a better term), if not, it'll download it and unzip it to the same folder for you.
 
-**b)** Next, it'll look to see if you have the "Shell Extension" installed. I use the term "Shell Extension" loosely, since it's not a true Shell Extension, it's just an addition to your Windows Context Menu via the Registry, so that you can right-click on any file, and click "GeekDrop Peek" to extract the strings from the file you selected.
+ **b)** Next, it'll look to see if you have the "Shell Extension" installed. I use the term "Shell Extension" loosely, since it's not a true Shell Extension, it's just an addition to your Windows Context Menu via the Registry, so that you can right-click on any file, and click "GeekDrop Peek" to extract the strings from the file you selected.
 
 **2.)** All done!
 
 The program will exit. Now whenever you want to sniff around inside of any file just right-click on the file in Explorer (or your favorite Explorer replacement) and click "GeekDrop Peek". It'll extract any strings it finds in the file and load up your Windows Notepad.exe with the results, (or whichever other program you have associated by default to open .txt files).
 
 
+
 ## Uninstallation ##
 
 To uninstall it, just manually run GeekDrop Peek.exe again by double-clicking it, and click the Uninstall button. It'll remove the Windows Context Menu item, and delete the Strings.exe file. Good as new! Want to re-install it? Maybe something broke? Just run it again and install.
+
 
 
 ## Roadmap and Todo's ##
@@ -61,9 +66,11 @@ To uninstall it, just manually run GeekDrop Peek.exe again by double-clicking it
 * Maybe add ability to use custom parameters instead of the default ones, since Strings has several available. The current default ones used in this app offer the same result as the original Peek extension.
 
 
+
 ## Other Notes Worth a Mention ##
 
 * I've made sure to keep this completely compatible with the original Peek extension so that they don't conflict, you can have both installed and usable at the same time if you wish, assuming the original Peek extension is working on your system (probably before Windows 7).
+
 
 
 ## Bugs? ##
@@ -71,6 +78,7 @@ To uninstall it, just manually run GeekDrop Peek.exe again by double-clicking it
 Tested to be working fine on everything except some setup type programs, in which case it simply runs the setup program as if Strings.exe wasn't even called. Pretty sure this is a Strings.exe bug.
 
 Anything else, let me know in the usual Issues area, here.
+
 
 
 ## Screenshots ##
@@ -112,9 +120,11 @@ Anything else, let me know in the usual Issues area, here.
 ![A example tag cloud (with dynamic color and size)](https://github.com/STaRDoGG/geekdrop-peek/blob/master/GeekDrop%20Peek/Images/Screenshots/GeekDrop-Peek-Uninstallation.jpg)
 
 
+
 ## Other Links ##
 
 The "home page" of GeekDrop Peek, is right here, don't be a stranger!: http://geekdrop.com/x/peek
+
 
 
 ## Changelog ##
