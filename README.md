@@ -119,7 +119,7 @@ Anything else, let me know in the usual Issues area, here.
 
 ![See?](https://github.com/STaRDoGG/geekdrop-peek/blob/master/GeekDrop%20Peek/Images/Screenshots/GeekDrop-Peek-Uninstallation.jpg)
 
-**Even better, how about a quick demonstration video?**
+**Even better, how about a quick demonstration video? (_Click below image to watch on YouTube_)**
 
 [![GeekDrop Peek Demonstration Video](https://img.youtube.com/vi/pAPLaC5Q3Fg/0.jpg)](http://youtu.be/pAPLaC5Q3Fg)
 
