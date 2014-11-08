@@ -37,6 +37,8 @@ Partial Class frmMain
         Me.btnExit = New System.Windows.Forms.Button()
         Me.picLogo = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblCallviaMethod = New System.Windows.Forms.Label()
+        Me.lblCallvia = New System.Windows.Forms.Label()
         Me.StatusStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.picLogo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,7 +114,7 @@ Partial Class frmMain
         Me.btnInstall_Uninstall.Name = "btnInstall_Uninstall"
         Me.btnInstall_Uninstall.Size = New System.Drawing.Size(226, 39)
         Me.btnInstall_Uninstall.TabIndex = 17
-        Me.btnInstall_Uninstall.Text = "INSTALL SHELL EXTENSION"
+        Me.btnInstall_Uninstall.Text = "INSTALL GEEKDROP PEEK"
         Me.btnInstall_Uninstall.UseVisualStyleBackColor = True
         '
         'btnAbout
@@ -137,7 +139,7 @@ Partial Class frmMain
         Me.lblState2.AutoSize = True
         Me.lblState2.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblState2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblState2.Location = New System.Drawing.Point(106, 164)
+        Me.lblState2.Location = New System.Drawing.Point(106, 156)
         Me.lblState2.Name = "lblState2"
         Me.lblState2.Size = New System.Drawing.Size(71, 13)
         Me.lblState2.TabIndex = 21
@@ -149,7 +151,7 @@ Partial Class frmMain
         Me.lblState.Cursor = System.Windows.Forms.Cursors.Default
         Me.lblState.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblState.Location = New System.Drawing.Point(12, 164)
+        Me.lblState.Location = New System.Drawing.Point(12, 156)
         Me.lblState.Name = "lblState"
         Me.lblState.Size = New System.Drawing.Size(98, 13)
         Me.lblState.TabIndex = 20
@@ -191,12 +193,39 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
+        'lblCallviaMethod
+        '
+        Me.lblCallviaMethod.AutoSize = True
+        Me.lblCallviaMethod.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCallviaMethod.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblCallviaMethod.Location = New System.Drawing.Point(54, 176)
+        Me.lblCallviaMethod.Name = "lblCallviaMethod"
+        Me.lblCallviaMethod.Size = New System.Drawing.Size(133, 13)
+        Me.lblCallviaMethod.TabIndex = 24
+        Me.lblCallviaMethod.Text = "Windows' Shell Extension"
+        Me.lblCallviaMethod.Visible = False
+        '
+        'lblCallvia
+        '
+        Me.lblCallvia.AutoSize = True
+        Me.lblCallvia.Cursor = System.Windows.Forms.Cursors.Default
+        Me.lblCallvia.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCallvia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblCallvia.Location = New System.Drawing.Point(12, 176)
+        Me.lblCallvia.Name = "lblCallvia"
+        Me.lblCallvia.Size = New System.Drawing.Size(44, 13)
+        Me.lblCallvia.TabIndex = 23
+        Me.lblCallvia.Text = "Call via"
+        Me.lblCallvia.Visible = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(432, 221)
+        Me.Controls.Add(Me.lblCallviaMethod)
+        Me.Controls.Add(Me.lblCallvia)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblState2)
         Me.Controls.Add(Me.lblState)
@@ -238,5 +267,7 @@ Partial Class frmMain
     Friend WithEvents lblState2 As System.Windows.Forms.Label
     Friend WithEvents lblState As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents lblCallviaMethod As System.Windows.Forms.Label
+    Friend WithEvents lblCallvia As System.Windows.Forms.Label
 
 End Class

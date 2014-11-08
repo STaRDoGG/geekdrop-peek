@@ -150,6 +150,7 @@ Module modStrings
                         Debug.Print("Error cleaning up!")
                     End Try
 
+                    frmMain.lblState2.Text = "Installed"
                     frmMain.tsLabel.Text = "Latest Engine has been installed!"
                 End If
 

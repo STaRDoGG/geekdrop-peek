@@ -79,77 +79,77 @@ Namespace My.Resources
                 Return ResourceManager.GetString("AboutRTF", resourceCulture)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property angel() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("angel", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property arrow() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("arrow", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property arrow_red() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("arrow_red", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property btn_donate_LG() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("btn_donate_LG", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property close() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("close", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property GeekDrop() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("GeekDrop", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property GeekDrop_Peek() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("GeekDrop Peek", resourceCulture)
-                Return CType(obj, System.Drawing.Bitmap)
+                Dim obj As Object = ResourceManager.GetObject("GeekDrop_Peek", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-
+        
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
@@ -157,20 +157,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("minimize", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to What in bejesus this?
-        '''---------------------
-        '''
-        '''Back in 1996 a developer created an excellent, tiny little, but immensely useful extension entitled &quot;Peek&quot; for short, or &quot;Peek Shell Extension&quot; for long. It extracted any strings it found within any file you wanted to sniff into. Great for looking for malicious programs, and what-not. It was around for years and years without issue until just the last Version (Windows 7) or two (Vista) in which it started to struggle in the compatibility department.
-        '''
-        '''Unfortu [rest of string was truncated]&quot;;.
-        '''</summary>
-        Friend ReadOnly Property ReadMe() As String
-            Get
-                Return ResourceManager.GetString("ReadMe", resourceCulture)
             End Get
         End Property
     End Module
