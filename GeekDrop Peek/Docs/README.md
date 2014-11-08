@@ -4,7 +4,7 @@
 
 **Tip:** If you want to skip reading all of this mumbo-jumbo, and just download the app right now, you can grab the compiled versions right here: https://github.com/STaRDoGG/geekdrop-peek/releases
 
-There's a 32 Bit version and a 64 Bit version for you to choose from.
+There are 32 & 64 Bit versions for you to choose from. Only 278kb!
 
 
 
