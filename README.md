@@ -44,11 +44,14 @@ However, their license doesn't allow us to actually include it in this package, 
 
  **a)** The first time it's run, it'll first check if you have Strings.exe in the same folder as this app (meaning it's "installed" for lack of a better term), if not, it'll download it and unzip it to the same folder for you.
 
- **b)** Next, it'll look to see if you have the "Shell Extension" installed. I use the term "Shell Extension" loosely, since it's not a true Shell Extension, it's just an addition to your Windows Context Menu via the Registry, so that you can right-click on any file, and click "GeekDrop Peek" to extract the strings from the file you selected.
+ **b)** (Default): Next, it'll look to see if you have the "Shell Extension" installed. I use the term "Shell Extension" loosely, since it's not a true Shell Extension, it's just an addition to your Windows Context Menu via the Registry, so that you can right-click on any file, and click "GeekDrop Peek" to extract the strings from the file you selected.
+
+ **c)** (Advanced): You can choose NOT to install the Windows context menu extension to call GeekDrop Peek from, and call it via a direct command-line call. This is useful if you know exactly what you're doing and would like to call Peek via another method; such as another Menu Utility, maybe a batch file, or whatever comes to mind. In order to do that, just call GeekDrop Peek.exe  with the file(s) full path as a parameter. If there are spaces in the path at all, wrap the entire path in quotes. Example: "C:\Windows\GeekDrop Peek.exe" "D:\Program Files\Stuff\File to Peek Into.exe"
+
 
 **2.)** All done!
 
-The program will exit. Now whenever you want to sniff around inside of any file just right-click on the file in Explorer (or your favorite Explorer replacement) and click "GeekDrop Peek". It'll extract any strings it finds in the file and load up your Windows Notepad.exe with the results, (or whichever other program you have associated by default to open .txt files).
+The program will exit. Now whenever you want to sniff around inside of any file just right-click on the file in Explorer (or your favorite Explorer replacement) and click "GeekDrop Peek". (Or if you chose the advanced option, call it however you set it up.) It'll extract any strings it finds in the file and load up your Windows Notepad.exe with the results, (or whichever other program you have associated by default to open .txt files).
 
 
 
@@ -135,5 +138,9 @@ The "home page" of GeekDrop Peek, is right here, don't be a stranger!: http://ge
 	* Added label addition to indicate if you're using the 32 Bit or 64 Bit version. If using x64 it'll show, otherwise it'll appear the same as usual.
 	* Added ability to choose whether to install the Shell Extension into Windows' Context-menu, or an advanced ability to just call GD Peek via a command-line.
 	  This allows for doing things such as calling GD Peek with other utilities. For example, FileMenu Tools: http://www.lopesoft.com/en/filemenutools
+	* Added label(s) to indicate which method the user chose to call GD Peek.
+	* Removed redundant ReadMe.txt file.
+	* Updated About.rtf which displays from a resource, in the About screen.
+	* Changed the button from displaying "Install/Uninstall Shell Extension" to "Install/Uninstall GeekDrop Peek" since I added the newer advanced calling option.
 * Version 1.0
 	* First release. Hello World!
